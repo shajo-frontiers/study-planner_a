@@ -1,5 +1,6 @@
 import './App.css';
 import TimeTable, {TimetableEvent} from './TimeTable'
+import Description from'./Description'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <header>
         <h1 className="h-7">Study Planner</h1>
       </header>
+      <Description/>
       <TimeTable events={events}></TimeTable>
     </>
   );
