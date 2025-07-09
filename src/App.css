@@ -40,3 +40,37 @@
 .read-the-docs {
   color: #888;
 }
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.header-left,
+.header-right {
+  width: 40px; /* 画像と同じ幅にしておくとバランス取りやすい */
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column; /* 縦に並べる */
+  align-items: center; /* 中央寄せ */
+  font-size: 12px; /* テキストを小さめに */
+  color: #333; /* お好みで */
+}
