@@ -8,7 +8,6 @@ import Page7 from './DL';
 
 import './App.css';
 import TimeTable, { TimetableEvent } from './TimeTable';
-import Description from './Description';
 
 function HomePage() {
   const events: TimetableEvent[] = [
@@ -35,11 +34,10 @@ function HomePage() {
         </div>
       </header>
 
-      {/* メイン */}
-      <Description />
+
       <TimeTable events={events} />
 
-      {/* フッター */}
+
       <div className="footer-bar">
         <Link to="/search" className="icon-item">
           <img src="./src/mushimegane.jpeg" width="40" />
